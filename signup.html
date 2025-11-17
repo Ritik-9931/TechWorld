@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechWorld — Signup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <div class="background">
+      <div class="ball b1"></div>
+      <div class="ball b2"></div>
+      <div class="ball b3"></div>
+      <div class="ball b4"></div>
+      <div class="ball b5"></div>
+      <div class="ball b6"></div>
+    </div>
+
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="index.html">
+        <div class="logo">TW</div>
+        <div>
+          <div class="site-title">TechWorld</div>
+        </div>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="categories.html">Categories</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <div class="auth-wrap">
+      <div class="auth-card">
+        <h2>Create an account</h2>
+        <p class="small" style="margin-bottom:12px">Start reading and commenting (UI-only signup).</p>
+
+        <form class="form" action="#" method="POST" novalidate>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Ritik Raushan" style="margin-bottom:12px">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" style="margin-bottom:12px">
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Create a password" style="margin-bottom:12px">
+
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px">
+            <input type="checkbox" id="tos" name="tos" style="width:18px;height:18px">
+            <label for="tos" class="small">I agree to the terms and privacy policy</label>
+          </div>
+
+          <div class="actions">
+            <button class="btn" type="submit">Create account</button>
+            <a href="login.html" class="small" style="color:var(--muted);text-decoration:none">Have an account? Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>© <strong>TechWorld</strong></div>
+      <div class="small">Made with HTML & CSS</div>
+    </footer>
+  </div>
+</body>
+</html>

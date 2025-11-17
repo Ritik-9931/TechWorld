@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechWorld — Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="ball b1"></div>
+      <div class="ball b2"></div>
+      <div class="ball b3"></div>
+      <div class="ball b4"></div>
+      <div class="ball b5"></div>
+      <div class="ball b6"></div>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <a class="brand" href="index.html">
+          <div class="logo">TW</div>
+          <div>
+            <div class="site-title">TechWorld</div>
+            <div class="site-sub">News • Tutorials • Reviews</div>
+          </div>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="categories.html">Categories</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="btn">Login</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero-card">
+          <div class="kicker">Latest</div>
+          <h1>
+            Stay updated with the latest in tech — tutorials, news, and deep
+            dives.
+          </h1>
+          <p>
+            TechWorld curates high-quality articles for developers, hobbyists,
+            and tech enthusiasts. No signup required to read.
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 12px">
+            <a href="blog.html" class="btn">Read Latest</a>
+            <a href="categories.html" class="btn-outline">Browse Categories</a>
+          </div>
+
+          <div class="space"></div>
+
+          <div class="kicker">Featured</div>
+          <div class="featured-list">
+            <article class="post">
+              <div class="thumb">
+                <img
+                  src="https://pinnacleiit.com/wp-content/uploads/2024/12/create-a-python-script.webp"
+                  height="70px"
+                  alt=""
+                />
+              </div>
+              <div class="post-info">
+                <h4>Introduction to Python for AI</h4>
+                <p class="small">Oct 12, 2025 — 6 min read</p>
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="thumb">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXbMcYnw5QNHhBNVxtPypD9tmErrCZqwMM5A&s"
+                  alt=""
+                />
+              </div>
+              <div class="post-info">
+                <h4>Top 7 VS Code Extensions in 2025</h4>
+                <p class="small">Sep 28, 2025 — 4 min read</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="sidebar">
+          <div class="search">
+            <div class="small">Search</div>
+            <input
+              placeholder="Search articles..."
+              style="
+                width: 100%;
+                margin-top: 8px;
+                padding: 8px;
+                border-radius: 8px;
+                border: none;
+                background: transparent;
+                color: var(--text);
+              "
+            />
+          </div>
+
+          <div class="stat">
+            <h3>2.3K</h3>
+            <p class="small">Monthly readers</p>
+          </div>
+
+          <div class="stat">
+            <h3>120+</h3>
+            <p class="small">Posts</p>
+          </div>
+        </aside>
+      </section>
+
+      <main class="grid">
+        <section>
+          <div class="posts">
+            <article class="article">
+              <div class="img">
+                <img
+                  src="https://datasciencedojo.com/wp-content/uploads/types-of-transformer-models.png"
+                  alt=""
+                />
+              </div>
+              <div class="meta">
+                <h3>Understanding Transformer Models</h3>
+                <p class="small">
+                  Deep dive into attention, transformers, and how they changed
+                  NLP.
+                </p>
+              </div>
+            </article>
+
+            <article class="article">
+              <div class="img">
+                <img
+                  src="https://repository-images.githubusercontent.com/799975430/49aaeb67-e194-422b-a334-57dbb8bf83fd"
+                  alt=""
+                />
+              </div>
+              <div class="meta">
+                <h3>Building a Responsive Portfolio</h3>
+                <p class="small">
+                  A step-by-step guide to CSS Grid and Flexbox for modern
+                  layouts.
+                </p>
+              </div>
+            </article>
+
+            <article class="article">
+              <div class="img">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17m1sGoXNfHwG9LkfGmDOJnQjsFzmhq9Jkw&s"
+                  alt=""
+                />
+              </div>
+              <div class="meta">
+                <h3>Cybersecurity essentials — what every dev should know</h3>
+                <p class="small">
+                  Best practices to keep applications secure in 2025.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside>
+          <div class="categories">
+            <div class="kicker">Categories</div>
+
+            <div class="cat-card">
+              <div class="cat-icon">AI</div>
+              <div>
+                <div style="font-weight: 700">AI / ML</div>
+                <div class="small">25 posts</div>
+              </div>
+            </div>
+
+            <div class="cat-card">
+              <div class="cat-icon">PR</div>
+              <div>
+                <div style="font-weight: 700">Programming</div>
+                <div class="small">40 posts</div>
+              </div>
+            </div>
+
+            <div class="cat-card">
+              <div class="cat-icon">GD</div>
+              <div>
+                <div style="font-weight: 700">Gadgets</div>
+                <div class="small">18 posts</div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="footer">
+        <div>© <strong>TechWorld</strong> — Built by Ritik Raushan</div>
+        <div class="small">Made with HTML & CSS</div>
+      </footer>
+    </div>
+  </body>
+</html>

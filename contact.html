@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechWorld — Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="ball b1"></div>
+      <div class="ball b2"></div>
+      <div class="ball b3"></div>
+      <div class="ball b4"></div>
+      <div class="ball b5"></div>
+      <div class="ball b6"></div>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <a class="brand" href="index.html">
+          <div class="logo">TW</div>
+          <div>
+            <div class="site-title">TechWorld</div>
+          </div>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="categories.html">Categories</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="login.html" class="btn">Login</a>
+        </nav>
+      </header>
+
+      <main
+        style="
+          display: grid;
+          grid-template-columns: 1fr 340px;
+          gap: 20px;
+          align-items: start;
+        "
+      >
+        <section>
+          <div class="kicker">Get in touch</div>
+
+          <div class="form" style="margin-top: 12px">
+            <form action="#" method="POST" novalidate>
+              <div class="row">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div style="margin-bottom: 12px">
+                <label for="subject">Subject</label>
+                <input
+                  id="subject"
+                  name="subject"
+                  type="text"
+                  placeholder="Subject"
+                />
+              </div>
+
+              <div style="margin-bottom: 12px">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here"
+                ></textarea>
+              </div>
+
+              <div
+                class="actions"
+                style="display: flex; gap: 12px; align-items: center"
+              >
+                <button class="btn" type="submit">Send Message</button>
+                <div class="small" style="color: var(--muted)">
+                  We'll reply within 3 business days.
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <aside>
+          <div class="form">
+            <div class="kicker">Contact Info</div>
+            <div style="margin-top: 12px" class="small">
+              Email: hello@techworld.example<br />
+              Twitter: @TechWorld<br />
+              Location: Remote
+            </div>
+          </div>
+
+          <div style="height: 14px"></div>
+
+          <div class="form">
+            <div class="kicker">FAQ</div>
+            <div style="margin-top: 8px" class="small">
+              For guest posts, send a pitch through the contact form.
+            </div>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="footer">
+        <div>© <strong>TechWorld</strong></div>
+        <div class="small">Made with HTML & CSS</div>
+      </footer>
+    </div>
+  </body>
+</html>

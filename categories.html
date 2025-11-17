@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TechWorld — Categories</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="ball b1"></div>
+      <div class="ball b2"></div>
+      <div class="ball b3"></div>
+      <div class="ball b4"></div>
+      <div class="ball b5"></div>
+      <div class="ball b6"></div>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <a class="brand" href="index.html">
+          <div class="logo">TW</div>
+          <div>
+            <div class="site-title">TechWorld</div>
+          </div>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="categories.html" class="active">Categories</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html" class="btn">Signup</a>
+        </nav>
+      </header>
+
+      <main style="margin-top: 20px">
+        <div class="kicker">Browse by Category</div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-top: 12px;
+          "
+        >
+          <div class="cat-card">
+            <div class="cat-icon">AI</div>
+            <div>
+              <div style="font-weight: 700">AI / ML</div>
+              <div class="small">Tutorials & research summaries</div>
+            </div>
+          </div>
+
+          <div class="cat-card">
+            <div class="cat-icon">PR</div>
+            <div>
+              <div style="font-weight: 700">Programming</div>
+              <div class="small">Guides, code snippets</div>
+            </div>
+          </div>
+
+          <div class="cat-card">
+            <div class="cat-icon">GD</div>
+            <div>
+              <div style="font-weight: 700">Gadgets</div>
+              <div class="small">Reviews & comparisons</div>
+            </div>
+          </div>
+
+          <div class="cat-card">
+            <div class="cat-icon">CS</div>
+            <div>
+              <div style="font-weight: 700">Cyber Security</div>
+              <div class="small">Best practices & news</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div>© <strong>TechWorld</strong></div>
+        <div class="small">Made with HTML & CSS</div>
+      </footer>
+    </div>
+  </body>
+</html>
