@@ -1,11 +1,8 @@
-/* styles.css - TechWorld (HTML + CSS only) */
-
-/* Reset & base */
 :root {
   --bg: #0a0a0c;             /* Pure matte black */
   --card: #121216;           /* Deep charcoal */
   --muted: #b8b8c3;          /* Soft luxury gray */
-  --accent: #f5c76d;         /* Royal Gold (24K soft gold) */
+  --accent: #fadca0;         /* Royal Gold (24K soft gold) */
   --accent-2: #ffebad;       /* Champagne Gold (light gold) */
   --glass: rgba(255, 255, 255, 0.04);  /* premium soft glass */
   --glass-2: rgba(255, 255, 255, 0.02);
@@ -29,8 +26,6 @@ body {
     "Helvetica Neue", Arial;
   background: linear-gradient(180deg, #071029 0%, #061524 60%);
   color: var(--text);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   padding: 32px 20px;
 }
@@ -57,11 +52,6 @@ body {
   animation: jump 10s infinite ease-in-out;
   pointer-events: auto; /* allow hover */
 }
-
-/* Hover = stop animation */
-/* .ball:hover {
-  animation-play-state: paused;
-} */
 
 /* EACH BALL DIFFERENT POSITION + SPEED */
 .b1 {
@@ -112,6 +102,10 @@ body {
   100% {
     transform: translate(0, 0) scale(1);
   }
+}
+
+.ball:hover {
+  animation-play-state: paused;
 }
 
 /* Container */
@@ -186,7 +180,7 @@ body {
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  background: linear-gradient(135deg, #0f0c29, #302b63,#24243e);
   color: #02121a;
   box-shadow: 0 8px 24px rgba(96, 255, 166, 0.06);
 }
